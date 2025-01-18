@@ -30,7 +30,7 @@ func loadEnv() error {
 	if err != nil {
 		return err
 	}
-	outputFile, err := os.OpenFile(outFileName, os.O_CREATE|os.O_RDWR|os.O_APPEND, 0600)
+	outputFile, err := os.OpenFile(outFileName, os.O_CREATE|os.O_RDWR, 0600)
 	if err != nil {
 		return err
 	}
